@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+    <script src="assets/js/material-kit.js?v=2.0.7" type="text/javascript"></script>
+    <link href="assets/css/material-kit.css?v=2.0.7" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<style>
+    :root {
+        --black: black;
+        --rose: #e91e63;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    small {
+        font-weight: 300;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 35px;
+        margin: 30px 0 0 0;
+    }
+
+    .banner-section::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.25);
+    }
+
+    .banner-section .container {
+        z-index: 1;
+    }
+
+    .section {
+        padding: 50px 0 0 0;
+    }
+
+    .nav-pills .nav-item:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .nav-pills .nav-item .nav-link {
+        font-size: 18px;
+        padding: 10px 25px;
+        text-transform: none;
+    }
+
+    .card-columns {
+        column-count: 1;
+        column-gap: 20px;
+    }
+
+    .card-columns .card {
+        margin: 0 0 20px 0;
+    }
+
+    .card-columns h4 {
+        font-size: 22px;
+    }
+
+    .card-img-overlay {
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .form-control,
+    .is-focused .form-control {
+        background-image: linear-gradient(0deg, var(--rose) 2px, rgba(156, 39, 176, 0) 0),
+        linear-gradient(0deg, #d2d2d2 1px, hsla(0, 0%, 82%, 0) 0);
+    }
+
+    .form-check .form-check-input:checked + .form-check-sign .check {
+        background: var(--rose);
+    }
+
+    .form-row button {
+        font-size: 16px;
+    }
+
+    .btn.back-to-top {
+        bottom: 50px;
+        right: 30px;
+        z-index: 10;
+        opacity: 0.5;
+        transition: all 0.2s;
+    }
+
+    .btn.back-to-top.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .btn.back-to-top:hover {
+        opacity: 1;
+    }
+
+    .page-footer,
+    .page-footer small {
+        font-size: 14px;
+    }
+
+    .page-footer a,
+    .page-footer span {
+        color: #3c4858;
+    }
+
+    .page-footer span {
+        color: var(--rose);
+    }
+
+    @media (min-width: 576px) {
+        .card-columns {
+            column-count: 2;
+        }
+    }
+</style>
+<body>
+<header class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="50">
+    <button onclick="goBack()">Обратно към сайта</button>
+</header>
+<section class="page-header text-center position-relative banner-section"
+         style="background-color: #dddddd;">
+</section>
+<main class="man main-raised">
+    <section class="section text-center">
+        <div class="main main-raised">
+            <section class="section text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10">
+                            <h2 class="title mb-4" data-aos="fade-up">СОФИЯ-ГРАД
+                            </h2>
+                            <p data-aos="fade-up">
+                                Со̀фия е столицата и най-големият град в България. Тя е 14-ият по големина град в Европейския съюз, с население 1 241 675 души (2019). По резултатите от преброяването през 2011 г. населението на града е 1 291 591, което представлява 17,5% от населението на България. София е разположена в централната част на Западна България, в Софийската котловина, и е заобиколена от планини:
+                                Витоша на юг, Люлин на запад и Стара планина на север. Това я прави четвъртата по височина столица в Европа.
+                                Изградена е върху четирите тераси на река Искър и нейните притоци: Перловска и Владайска (Елешница).
+                                В централната градска част, както и в кварталите Овча купел, Княжево, Горна баня и Панчарево, има минерални извори.
+                                Климатът на София е умереноконтинентален.
+                                София е основен административен, индустриален, транспортен, културен и университетски център на страната,
+                                като в нея е съсредоточено 1/6 от промишленото производство на България.
+                                Тук се намират също така Българската академия на науките, много университети, театри, кина, както и
+                                Националната галерия, археологически, исторически, природонаучни и други музеи.
+                                На много места в центъра на града са запазени видими археологически паметници от римско време.</p>
+
+                            <p data-aos="fade-up">В София се намират редица паметници от различни епохи. Някои от тях, построени по време на комунистическата власт, са разрушени – такъв е случаят с паметника на Ленин и мавзолея на Георги Димитров, на чието място за известно време се оформя паркинг. Паметникът пред Националния дворец на културата се руши сам и с течение на времето от него остава само скелето.
+                                Други, като мавзолея на първия български княз Александър I Батенберг, са затворени за посетители от 1946 до 1991 г., през цялото време на тоталитарния режим,
+                                и много хора дори не знаят за неговото съществуване по това време.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section text-center">
+                <div class="container">
+                    <h2 class="title mb-4" data-aos="flip-up">Красиви места</h2>
+                    <div class="card-columns text-white">
+                        <div class="card bg-dark" data-aos="fade-right">
+                            <img class="card-img" src="https://live.staticflickr.com/65535/47967487056_f1d21caac4_b.jpg" alt="Card image">
+                            <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
+                                <h4 class="card-title">Пловдив, България</h4>
+                            </div>
+                        </div>
+                        <div class="card bg-dark" data-aos="fade-right">
+                            <img class="card-img"
+                                 src="https://kongres-magazine.eu/wp-content/uploads/2020/03/varna-bulgaria_1054165976-1.jpg"
+                                 alt="Card image">
+                            <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
+                                <h4 class="card-title">Варна, България</h4>
+                            </div>
+                        </div>
+                        <div class="card bg-dark" data-aos="fade-right">
+                            <img class="card-img"
+                                 src="https://img.travelawaits.com/quill/a/1/2/5/4/2/a125422ba5d6376cc1a40b63297d49f5de0e264a.jpg"
+                                 alt="Card image">
+                            <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
+                                <h4 class="card-title">София, България</h4>
+                            </div>
+                        </div>
+                        <div class="card bg-dark" data-aos="fade-left">
+                            <img class="card-img"
+                                 src="https://q-cf.bstatic.com/images/hotel/max1024x768/107/107375108.jpg"
+                                 alt="Card image">
+                            <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center">
+                                <h4 class="card-title">Бургас, България</h4>
+                                <p class="card-text mt-0"></p>
+                            </div>
+            </section>
+        </div>
+    </section>
+    <section class="section pb-5">
+        <div class="container">
+            <h2 class="title text-center mb-4" data-aos="fade-up">ЗАПИШЕТЕ СЕ ЗА GIVEAWAY
+            </h2>
+            <form data-aos="fade-up">
+                <div class="form-row">
+                    <div class="col-12 col-md-6 mb-4">
+                        <input type="text" class="form-control" placeholder="Три имена">
+                    </div>
+                    <div class="col col-md-6 mb-4">
+                        <input type="email" class="form-control" placeholder="Имейл">
+                    </div>
+                    <div class="col-12 mb-4">
+                        <textarea class="form-control" rows="5" placeholder="Съобщение..."></textarea>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="">
+                                Съгласен съм с Правилата и политики на играта.
+                                <span class="form-check-sign">
+                  <span class="check"></span>
+                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 text-right">
+                        <button type="submit" class="btn btn-danger">Изпрати</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+<footer class="py-4 page-footer">
+</footer>
+
+<button class="btn btn-danger btn-fab btn-fab-mini btn-round position-fixed back-to-top is-hidden">
+    <i class="material-icons">keyboard_arrow_up</i>
+</button>
+<script>
+    const $backTop = $(".back-to-top");
+    const isHidden = "is-hidden";
+
+    AOS.init({
+        offset: 200,
+        delay: 50,
+        once: true
+    });
+
+    /*$('a[data-toggle="pill"]').on("shown.bs.tab", e => {
+      AOS.refresh();
+    });*/
+
+    $(window).on("scroll", function() {
+        const $this = $(this);
+        if ($this.scrollTop() + $this.height() == $(document).height()) {
+            $backTop.removeClass(isHidden);
+        } else {
+            $backTop.addClass(isHidden);
+        }
+    });
+
+    $backTop.on("click", () => {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+    function goBack() {
+        window.location.replace("site test.html");
+
+    }
+</script>
+</body>
+</html>

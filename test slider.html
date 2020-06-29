@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" rel="stylesheet">
+    <script crossorigin="anonymous"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+    <div class="col-xs-6"><img id="firstImage" height="10" src="stick.png"  width="130">
+    <p>1.4mm</p> </div>
+        <div id="btn1" onclick="changePhoto('first')">|</div>
+    <div class="col-xs-6"><img id="secondImage" height="10" src="rect.png"  width="130">
+    <p>1.5mm</p></div>
+        <div id="btn2" onclick="changePhoto('second')">|</div>
+        <div class="col-xs-6"><img id="thirdImage" height="10" src="rect.png"  width="130">
+            <p>1.9mm</p> </div>
+        <div id="btn3" onclick="changePhoto('third')">|</div>
+        <div class="col-xs-6"><img id="fourthImage" height="10" src="rect.png"  width="130">
+            <p>2.5mm</p></div>
+    </div>
+    </div>
+<div class="container" id="text">
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+</div>
+<div class="container" id="text">
+    <p>
+        Lorem ipsum dolor sit amet. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+</div>
+<script>
+function changePhoto(caller) {
+let first= document.getElementById("firstImage");
+let second= document.getElementById("secondImage");
+let third= document.getElementById("thirdImage");
+let fourth= document.getElementById("fourthImage");
+let text=document.getElementById("text");
+if (caller === "first") {
+    first.src = "stick.png"
+    second.src= "rect.png"
+    third.src= "rect.png"
+    text.innerHTML="hello"
+}
+if (caller==="second") {
+    first.src= "rect.png"
+    second.src="stick.png"
+    third.src="rect.png"
+    text.innerHTML="bye"
+
+}
+if (caller==="third") {
+    first.src= "rect.png"
+    second.src="rect.png"
+    third.src="stick.png"
+    text.innerHTML="dear"
+}
+console.log(caller);
+}
+</script>
+</body>
+</html>
+
+
+<!--When i click any | I want a function to be called printing to console the ID
+of the element clicked-->

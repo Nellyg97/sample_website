@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkorange;
+            padding-right: 400px;
+            position:relative;
+            height: 500%;
+            background-image: url("https://www.dhresource.com/0x0/f2/albu/g4/M01/14/57/rBVaEVeghW2AfyLtAAT-ePWugjY320.jpg");
+            margin-top: 2px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add padding to containers */
+        .container {
+            padding: 16px;
+            background-color: white;
+        }
+
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus, input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+.socialbtn {
+    background-color: darkblue;
+    color: white;
+    padding: 16px 20px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    width: 22%;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+.socialbtn1 {
+    background-color: white;
+    color: black;
+    padding: 16px 20px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+    border-radius: 5px;
+
+}
+        .socialbtn1:hover {
+            background-color: lightgrey;
+        }
+        /* Overwrite default styles of hr */
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        /* Set a style for the submit button */
+        .registerbtn {
+            background-color: darkorange;
+            color: white;
+            padding: 16px 20px;
+            margin: 20px 0;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+            opacity: 0.9;
+        }
+
+        .registerbtn:hover {
+            opacity: 1;
+        }
+
+        /* Add a blue text color to links */
+        a {
+            color: dodgerblue;
+        }
+
+        /* Set a grey background color and center the text of the "sign in" section */
+        .signin {
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<form action="/action_page.php">
+    <div class="container">
+        <h1>Създайте профил</h1>
+        <p>Регистрирайте се лесно и бързо чрез профила си в социалните мрежи</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+        <button type="submit" class="socialbtn" style="border: 1px solid Blue">Регистрирай се с Facebook</button>
+        <button type="submit" class="socialbtn1" style="border: 1px solid darkorange">Регистрирай се с Google</button>
+            </div>
+        </div>
+        </div>
+        <hr>
+
+        <label for="email"><b>Имейл</b></label>
+        <input type="text" placeholder="Въведи имейл..." name="email" id="email" required>
+
+        <label for="psw"><b>Парола</b></label>
+        <input type="password" placeholder="Въведи парола..." name="psw" id="psw" required>
+
+        <label for="psw-repeat"><b>Потвърди парола</b></label>
+        <input type="password" placeholder="Потвърди паролата..." name="psw-repeat" id="psw-repeat" required>
+        <hr>
+        <p><input type="checkbox" class="form-check-input" id="exampleCheck1">Създавайки своя акаунт, вие се съгласявате с нашите <a href="#"> Правила и политики</a>.</p>
+        <button type="submit" class="registerbtn">Създай</button>
+    </div>
+
+</form>
+</body>
+</html>

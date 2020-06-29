@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: darkorange;
+        padding-right: 500px;
+        position: relative;
+        height: 500%;
+        background-image: url("https://img.wallpapersafari.com/desktop/1600/900/38/18/lBL5o6.jpg");
+        display: flex;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    * {
+        box-sizing: border-box;
+        border-radius: 100px;
+    }
+
+    /* Add padding to containers */
+    .container {
+        padding: 16px;
+        background-color: white;
+
+    }
+
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    .socialbtn {
+        background-color: darkblue;
+        color: white;
+        padding: 16px 20px;
+        margin: 20px 0;
+        border: none;
+        cursor: pointer;
+        width: 30%;
+        opacity: 0.9;
+        border-radius: 5px;
+    }
+
+    .socialbtn1 {
+        background-color: white;
+        color: black;
+        padding: 16px 20px;
+        margin: 20px 0;
+        border: none;
+        cursor: pointer;
+        width: 30%;
+        opacity: 0.9;
+        border-radius: 5px;
+
+    }
+
+    .socialbtn1:hover {
+        background-color: lightgrey;
+    }
+
+    /* Overwrite default styles of hr */
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+
+    /* Set a style for the submit button */
+    .registerbtn {
+        background-color: darkorange;
+        color: white;
+        padding: 16px 20px;
+        margin: 20px 0;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+        opacity: 0.9;
+    }
+
+    .registerbtn:hover {
+        opacity: 1;
+    }
+
+    /* Add a blue text color to links */
+    a {
+        color: dodgerblue;
+    }
+
+
+
+</style>
+<body>
+<form action="/action_page.php">
+    <div class="container">
+        <h1>ВЛЕЗТЕ В ПРОФИЛА СИ</h1>
+        <p>Влезте лесно и бързо чрез профила си в социалните мрежи</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="submit" class="socialbtn" style="border: 1px solid Blue">Регистрирай се с Facebook
+                    </button>
+                    <button type="submit" class="socialbtn1" style="border: 1px solid darkorange">Регистрирай се с
+                        Google
+                    </button>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <label for="email"><b>*Имейл</b></label>
+        <input type="text" placeholder="Въведи имейл..." name="email" id="email" required>
+
+        <label for="psw"><b>*Парола</b></label>
+        <input type="password" placeholder="Въведи парола..." name="psw" id="psw" required>
+
+        <hr>
+
+        <p><input type="checkbox" class="form-check-input" id="exampleCheck1">Запомни ме</p>
+        <div class="row col-md-6">
+        <a href="#">Забрави ли паролата?</a> </div>
+        <div class="row col-md-6">
+        <button type="submit" class="registerbtn">Вход</button>
+    </div>
+
+</form>
+</body>
+</html>
